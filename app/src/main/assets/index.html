@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Starfall</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <script>
+
+
+
+  function tap(event) {
+        if(event.target.className=="no-ellipsis"){
+          event.target.className="with-ellipsis";
+        }else{
+          event.target.className="no-ellipsis";
+        }
+}
+
+function doubletap(){
+  //stars
+ var area1 = document.getElementById("stars");
+ area1.className="no-ellipsis";
+ var dt = new Hammer(area1);
+ dt.on("doubletap", function (event){tap(event)});
+
+//vega
+ var area2 = document.getElementById("vega");
+ area2.className="no-ellipsis";
+ var dt2 = new Hammer(area2);
+ dt2.on("doubletap", function (event){ tap(event)});
+
+//Betelgeuse
+ var area3 = document.getElementById("Betelgeuse");
+ area3.className="no-ellipsis";
+ var dt3 = new Hammer(area3);
+ dt3.on("doubletap", function (event){ tap(event)});
+
+//r136
+ var area4 = document.getElementById("cluster");
+ area4.className="no-ellipsis";
+ var dt4 = new Hammer(area4);
+ dt4.on("doubletap", function (event){ tap(event)});
+
+//Rigel
+ var area5 = document.getElementById("rigel");
+ area5.className="no-ellipsis";
+ var dt5 = new Hammer(area5);
+ dt5.on("doubletap", function (event){ tap(event)});
+
+ //Sirius A
+  var area6 = document.getElementById("sirius");
+  area6.className="no-ellipsis";
+  var dt6 = new Hammer(area6);
+  dt6.on("doubletap", function (event){ tap(event)});
+
+}
+
+  </script>
+</head>
+
+<body onload="doubletap();">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Starfall</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="merch.html">Merch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="step.html">Step Counter</a>
+        </li>
+    </div>
+  </nav>
+    <h1>Information</h1>
+    <div class="col-10 mx-auto">
+    <div class="card-deck ">
+      <div class="card shadow-lg">
+        <img class="card-img-top" src="star.jpg" alt="stars">
+        <div class="card-body">
+          <h5 class="card-title">Stars</h5>
+          <p class="card-text with-ellipsis" id="stars">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://www.flickr.com/photos/tom_hall_nz/15188916669/in/photolist-p9caKB-9ekp6c-ajd5n3-oQChki-bWMmqL-aGEPRF-pTDSgn-fmqtQK-4dLZ5h-ecPsb2-9jwRwc-6xbPjy-euTdwd-JHL9z3-4judii-4om8TV-cWTwgG-aFg4fv-aaRgXo-cWTArU-9iYsht-oQTj54-98pHNe-rDsgb-aeeh5T-7Z9eZ-9dLzLU-cWTB1o-cWTxrU-fs5y3N-5FN5Y1-cWTzkd-2cDh4rN-8ufh5f-cWTA5w-osE25H-dAyvfy-8HLsg4-fs5wyd-5c9eNk-rSbvy-jUTbL-4LY3sc-39KYYY-d2MN8U-bpHc2U-y2csk-MrZNP-pij6n-4csmxE">star</a> by <a href="https://www.flickr.com/photos/tom_hall_nz/"> Tom Hall</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></small>
+        </div>
+      </div>
+
+  <div class="card shadow-lg">
+    <img class="card-img-top" src="vega.jpg" alt="vega">
+    <div class="card-body">
+      <h5 class="card-title">Vega</h5>
+      <p class="card-text with-ellipsis" id="vega">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://commons.wikimedia.org/wiki/File:Vega_(star).jpg">Vega (star)</a> by <a href="https://commons.wikimedia.org/wiki/User:Fossart">Fossart</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY 4.0</a>, edited by Starfall</small>
+    </div>
+  </div>
+  <div class="card shadow-lg">
+    <img class="card-img-top" src="Betelgeuse.jpg" alt="Betelgeuse">
+    <div class="card-body">
+      <h5 class="card-title">Betelgeuse</h5>
+      <p class="card-text with-ellipsis" id="Betelgeuse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://commons.wikimedia.org/wiki/File:Betelgeuse_captured_by_ALMA.jpg">Betelgeuse</a> by ALMA (ESO/NAOJ/NRAO)/E. O’Gorman/P. Kervella, <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a>, edited by Starfall</small>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-10 mx-auto">
+<div class="card-deck">
+  <div class="card shadow-lg">
+    <img class="card-img-top" src="r136.jpg" alt="R136">
+    <div class="card-body">
+      <h5 class="card-title">R136 Cluster</h5>
+      <p class="card-text with-ellipsis" id="cluster">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://en.wikipedia.org/wiki/File:Grand_star-forming_region_R136_in_NGC_2070_(captured_by_the_Hubble_Space_Telescope).jpg">Grand star-forming region R136 in NGC 2070 (captured by the Hubble Space Telescope)</a> by NASA, ESA, F. Paresce (INAF-IASF, Bologna, Italy), R. O'Connell (University of Virginia, Charlottesville), and the Wide Field Camera 3 Science Oversight Committee, Public Domain</small>
+    </div>
+  </div>
+
+<div class="card shadow-lg">
+<img class="card-img-top" src="Rigel.jpeg" alt="Rigel">
+<div class="card-body">
+  <h5 class="card-title">Rigel</h5>
+  <p class="card-text with-ellipsis" id="rigel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+</div>
+<div class="card-footer">
+  <small class="text-muted"><a href="https://commons.wikimedia.org/wiki/File:Rigel,_Rutherfurd_Observatory,_09_September_2014.jpeg">Rigel, Rutherfurd Observatory, 09 September 2014.jpeg</a> by <a href="https://en.wikipedia.org/wiki/User:Haktarfone">Haktarfone</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a></small>
+</div>
+</div>
+<div class="card shadow-lg">
+<img class="card-img-top" src="Sirius_a.jpg" alt="Sirius A">
+<div class="card-body">
+  <h5 class="card-title">Sirius A</h5>
+  <p class="card-text with-ellipsis" id="sirius">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+</div>
+<div class="card-footer">
+  <small class="text-muted"><a href="https://commons.wikimedia.org/wiki/File:Sirius_A_and_B_artwork.jpg">Sirius A and B artwork</a> by NASA, ESA and G. Bacon (STScI), Public Domain</small>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
